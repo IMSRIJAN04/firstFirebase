@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "firebase-demo"
+    }
+  },
+  "defaultProject": "firebase-demo",
+  "cli": {
+    "analytics": "cb136e2d-e708-41de-9c98-7f2bd37095a4"
+  }
 }

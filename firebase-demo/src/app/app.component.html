@@ -1,19 +1,27 @@
 <router-outlet></router-outlet>
+<style>
+  ul {
+  list-style-type:disc;
+  margin-left:300px;
+
+}
+
+
+</style>
 <div style="text-align: center;">
 
   <input #box
       (keyup.enter)="update(box.value)"
       (blur)="update(box.value); box.value='' "
        >
-       <button (click)="update( box.value)">Add</button>
-       <div style="align-content: center;">
-        <ul style="list-style-position: inherit;">
+       <button (click)="update( box.value)">Add</button></div>
+       <div >
+        <ul >
           <li  *ngFor=" let value of values" >{{value}}</li>
         </ul>
-
        </div>
        
 
     
   
-</div>
+

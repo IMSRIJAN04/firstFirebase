@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'firebase-demo';
+  
+  values = [];
+
+  update(value: string) {
+    if(value) {
+      this.values.push(value);
+    }  
+  }
+
 }

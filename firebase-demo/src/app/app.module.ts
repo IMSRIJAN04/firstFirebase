@@ -9,10 +9,12 @@ import {AngularFireDatabaseModule} from '@angular/fire/database';
 
 
 import { from } from 'rxjs';
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,

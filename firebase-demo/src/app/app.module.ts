@@ -16,7 +16,7 @@ import { from } from 'rxjs';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule, 
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule
     

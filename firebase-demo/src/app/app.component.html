@@ -1,27 +1,10 @@
 <router-outlet></router-outlet>
-<style>
-  ul {
-  list-style-type: square type q;
-  margin-left:300px;
-
-}
-
-
-</style>
-<div style="text-align: center;">
-
-  <input #box
-      (keyup.enter)="update(box.value)"
-      (blur)="update(box.value); box.value='' "
-       >
-       <button (click)="update( box.value)">Add</button></div>
-       <div >
-        <ul >
-          <li  *ngFor=" let value of values" >{{value}}</li>
-        </ul>
-       </div>
-       
-
-    
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md3">
+      <app-todo></app-todo>
+    </div>
+  </div>
+</div>
   
 

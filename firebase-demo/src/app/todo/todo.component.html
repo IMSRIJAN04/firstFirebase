@@ -1,10 +1,10 @@
-<div class="jumbotron" style="padding: 45px 0px">
+<div class="jumbotron" style="padding: 50px 0px">
  <h4 class="text-center">To Do List App</h4>
 </div>
 <div class="input-group">
-    <input type="text" class="form-control" #itemTitle>
+    <input type="text" class="form-control" #itemTitle (keyup.enter)="onAdd(itemTitle)">
     <div class="input-group-addon hover-cursor" (click)="onAdd(itemTitle)">
-        <i class="fa fa-plus-circle fa-2x "></i>
+        <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
 
     </div>
 </div>
@@ -17,7 +17,7 @@
             </span>
             {{item.title}}
             <span class="hover-cursor text-danger pull-right" (click)="onDelete(item.$key)">
-                <i class="fa fa-trash-o fa-lg"></i>
+                <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
             </span>
         </li>
     </ul>

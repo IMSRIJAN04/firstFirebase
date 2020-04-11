@@ -1,7 +1,50 @@
-hello
-<div>
+<mdb-navbar SideClass="navbar navbar-dark navbar-expand-lg blue ">
 
-    <a routerLink="todo" routerLinkActive="active" >todo list</a>
-    <a routerLink="about"  routerLinkActive="active"> about </a>
+    <!-- Navbar brand -->
+    <mdb-navbar-brand><a class="navbar-brand" href="#">Home</a></mdb-navbar-brand>
+  
+    <!-- Collapsible content -->
+    <links>
+  
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a routerLink="todo" class="nav-link waves-light" mdbWavesEffect>Todo list</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="about" class="nav-link waves-light" mdbWavesEffect>About</a>
+            </li>
+                  
+        </ul>
+        <!-- Links -->
+  
+  
+    </links>
+    <!-- Collapsible content -->
+</mdb-navbar>
 
-</div>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image:url('https://images.assetsdelivery.com/compings_v2/jirsak/jirsak1601/jirsak160100012.jpg')">
+        
+        <img class="d-block w-100" src="https://images.assetsdelivery.com/compings_v2/jirsak/jirsak1601/jirsak160100012.jpg">
+
+        <div class="carousel-caption animated bounceInUp slower">
+            <h1>Welcome to ToDoList App</h1>
+            <p>Here you can make a list of tasks and delete them from list when required</p>
+                  <div>
+                    click here for<br>
+                    <a routerLink="todo" class="btn blue-gradient btn-lg" href="#"> TODOLIST</a>
+                    
+                  </div>
+                            
+         </div>
+
+
+            
+       
+            
+      </div>
+    </div>
+ </div>

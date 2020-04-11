@@ -9,11 +9,13 @@ import {AngularFireDatabaseModule} from '@angular/fire/database';
 import { from } from 'rxjs';
 import { TodoComponent } from './todo/todo.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoComponent
+    TodoComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

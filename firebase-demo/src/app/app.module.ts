@@ -10,14 +10,17 @@ import { from } from 'rxjs';
 import { TodoComponent } from './todo/todo.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    AboutComponent
   ],
   imports: [
+
     BrowserModule,
     AppRoutingModule, 
     AngularFireModule.initializeApp(environment.firebase),

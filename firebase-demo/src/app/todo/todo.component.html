@@ -19,7 +19,7 @@
           <h4 class="text-center ">To Do List </h4>
         </div>
       <div class="input-group">
-         <input type="text" class="form-control" #itemTitle (keyup.enter)="onAdd(itemTitle)">
+         <input type="text" class="form-control"  #itemTitle *ngIf="itemTitle!=undefined|null; then thenBlock else elseBlock" (keyup.enter)="onAdd(itemTitle)">
           <div class="input-group-addon hover-cursor" (click)="onAdd(itemTitle)">
             <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
    
